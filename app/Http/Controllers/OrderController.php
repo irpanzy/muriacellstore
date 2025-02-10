@@ -64,7 +64,7 @@ class OrderController extends Controller
             return redirect()->route('front.order_finished', $productTransactionId);
         }
 
-        return redirect()->route('front.index')->withErrors(['error' => 'Payment failed. Please try again.']);
+        return redirect()->route('front.home')->withErrors(['error' => 'Payment failed. Please try again.']);
     }
 
     public function orderFinished(ProductTransaction $productTransaction)

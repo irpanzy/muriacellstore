@@ -4,7 +4,7 @@ use App\Http\Controllers\FrontController;
 use App\Http\Controllers\OrderController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', [FrontController::class, 'index'])->name('front.index');
+Route::get('/', [FrontController::class, 'home'])->name('front.home');
 
 Route::get('/browse/{category:slug}', [FrontController::class, 'category'])->name('front.category');
 

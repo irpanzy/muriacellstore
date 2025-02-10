@@ -16,11 +16,11 @@ class FrontController extends Controller
         $this->frontServices = $frontServices;
     }
 
-    public function index()
+    public function home()
     {
         $data = $this->frontServices->getFrontPageData();
         // dd($data);
-        return view('front.index', $data);
+        return view('front.home', $data);
     }
 
     public function details(Handphone $handphone) // model binding
