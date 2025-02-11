@@ -47,7 +47,7 @@ class OrderService
         $quantity = isset($orderData['quantity']) ? $orderData['quantity'] : 1;
         $subTotalAmount = $handphone->price * $quantity;
 
-        $taxRate = 0.12;
+        $taxRate = 0;
         $totalTax = $subTotalAmount * $taxRate;
 
         $grandTotalAmount = $subTotalAmount + $totalTax;
