@@ -68,7 +68,7 @@
                             <a href="{{ route('front.details', $itemPopularHandphone->slug) }}">
                                 <div
                                     class="flex flex-col shrink-0 w-[230px] h-full rounded-3xl gap-[14px] p-[10px] pb-4 bg-white transition-all duration-300 hover:ring-2 hover:ring-[#FFC700]">
-                                    <div class="w-[210px] h-[230px] rounded-3xl bg-[#D9D9D9] overflow-hidden">
+                                    <div class="w-[210px] h-[230px] rounded-3xl bg-[#D1F8EF] overflow-hidden">
                                         <img src="{{ Storage::url($itemPopularHandphone->thumbnail) }}"
                                             class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
@@ -110,7 +110,7 @@
                     <a href="{{ route('front.details', $itemNewHandphone->slug) }}">
                         <div
                             class="flex items-center rounded-3xl p-[10px_16px_16px_10px] gap-[14px] bg-white transition-all duration-300 hover:ring-2 hover:ring-[#FFC700]">
-                            <div class="w-20 h-20 flex shrink-0 rounded-2xl bg-[#D9D9D9] overflow-hidden">
+                            <div class="w-20 h-20 flex shrink-0 rounded-2xl overflow-hidden">
                                 <img src="{{ Storage::url($itemNewHandphone->thumbnail) }}"
                                     class="w-full h-full object-cover" alt="thumbnail">
                             </div>
