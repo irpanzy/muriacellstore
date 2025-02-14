@@ -6,15 +6,15 @@
 <body>
     <div class="relative flex flex-col w-full max-w-[640px] min-h-screen gap-5 mx-auto bg-[#F5F5F0]">
         <div id="top-bar" class="flex justify-between items-center px-4 mt-[20px]">
-            <img src="{{asset('assets/images/logos/logo.png')}}" class="h-[50px] flex shrink-0" alt="logo">
+            <img src="{{ asset('assets/images/logos/logo.png') }}" class="h-[50px] flex shrink-0" alt="logo">
             <a href="#">
-                <img src="{{asset('assets/images/icons/notification.svg')}}" class="w-10 h-10" alt="icon">
+                <img src="{{ asset('assets/images/icons/notification.svg') }}" class="w-10 h-10" alt="icon">
             </a>
         </div>
         <form class="flex justify-between items-center mx-4">
             <div
                 class="relative flex items-center w-full rounded-l-full px-[14px] gap-[10px] bg-white transition-all duration-300 focus-within:ring-2 focus-within:ring-[#FFC700]">
-                <img src="{{asset('assets/images/icons/search-normal.svg')}}" class="w-6 h-6" alt="icon">
+                <img src="{{ asset('assets/images/icons/search-normal.svg') }}" class="w-6 h-6" alt="icon">
                 <input type="text"
                     class="w-full py-[14px] appearance-none bg-white outline-none font-semibold placeholder:font-normal placeholder:text-[#878785]"
                     placeholder="Search product...">
@@ -42,7 +42,7 @@
                                 <p class="text-xs leading-[18px] text-[#878785]">
                                     {{ $itemCategory->handphones->count() }}</p>
                             </div>
-                            <div class="flex shrink-0 w-20 h-[90px] overflow-hidden">
+                            <div class="flex shrink-0 w-25 h-[90px] overflow-hidden">
                                 <img src="{{ Storage::url($itemCategory->icon) }}"
                                     class="w-full h-full object-cover object-left" alt="thumbnail">
                             </div>
@@ -68,7 +68,7 @@
                             <a href="{{ route('front.details', $itemPopularHandphone->slug) }}">
                                 <div
                                     class="flex flex-col shrink-0 w-[230px] h-full rounded-3xl gap-[14px] p-[10px] pb-4 bg-white transition-all duration-300 hover:ring-2 hover:ring-[#FFC700]">
-                                    <div class="w-[210px] h-[230px] rounded-3xl bg-[#D9D9D9] overflow-hidden">
+                                    <div class="w-[210px] h-[230px] rounded-3xl bg-[#D1F8EF] overflow-hidden">
                                         <img src="{{ Storage::url($itemPopularHandphone->thumbnail) }}"
                                             class="w-full h-full object-cover" alt="thumbnail">
                                     </div>
@@ -110,7 +110,7 @@
                     <a href="{{ route('front.details', $itemNewHandphone->slug) }}">
                         <div
                             class="flex items-center rounded-3xl p-[10px_16px_16px_10px] gap-[14px] bg-white transition-all duration-300 hover:ring-2 hover:ring-[#FFC700]">
-                            <div class="w-20 h-20 flex shrink-0 rounded-2xl bg-[#D9D9D9] overflow-hidden">
+                            <div class="w-20 h-20 flex shrink-0 rounded-2xl overflow-hidden">
                                 <img src="{{ Storage::url($itemNewHandphone->thumbnail) }}"
                                     class="w-full h-full object-cover" alt="thumbnail">
                             </div>
@@ -149,18 +149,19 @@
                     class="grid grid-flow-col auto-cols-auto items-center justify-between rounded-full bg-[#2A2A2A] p-2 px-[30px]">
                     <a href="{{ route('front.home') }}" class="active flex shrink-0 -mx-[22px]">
                         <div class="flex items-center rounded-full gap-[10px] p-[12px_16px] bg-[#C5F277]">
-                            <img src="{{asset('assets/images/icons/3dcube.svg')}}" class="w-6 h-6" alt="icon">
+                            <img src="{{ asset('assets/images/icons/3dcube.svg') }}" class="w-6 h-6" alt="icon">
                             <span class="font-bold text-sm leading-[21px]">Browse</span>
                         </div>
                     </a>
                     <a href="check-booking.html" class="mx-auto w-full">
-                        <img src="{{asset('assets/images/icons/bag-2-white.svg')}}" class="w-6 h-6" alt="icon">
+                        <img src="{{ asset('assets/images/icons/bag-2-white.svg') }}" class="w-6 h-6" alt="icon">
                     </a>
                     <a href="#" class="mx-auto w-full">
-                        <img src="{{asset('assets/images/icons/star-white.svg')}}" class="w-6 h-6" alt="icon">
+                        <img src="{{ asset('assets/images/icons/star-white.svg') }}" class="w-6 h-6" alt="icon">
                     </a>
                     <a href="#" class="mx-auto w-full">
-                        <img src="{{asset('assets/images/icons/24-support-white.svg')}}" class="w-6 h-6" alt="icon">
+                        <img src="{{ asset('assets/images/icons/24-support-white.svg') }}" class="w-6 h-6"
+                            alt="icon">
                     </a>
                 </div>
             </nav>
