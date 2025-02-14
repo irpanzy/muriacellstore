@@ -62,7 +62,7 @@ class OrderService
     public function applyPromoCode(string $code, int $subTotalAmount)
     {
         $promo = $this->promoCodeRepository->findByCode($code);
-        if (!$promo) {
+        if ($promo) {
             $discount = $promo->discount_amount;
             $grandTotalAmount = $subTotalAmount - $discount;
             $promoCodeId = $promo->id;
