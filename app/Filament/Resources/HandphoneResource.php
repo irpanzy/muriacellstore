@@ -53,11 +53,11 @@ class HandphoneResource extends Resource
                     ->schema([
                         Forms\Components\Select::make('capacity')
                         ->options([
-                            '32GB' => '32 GB',
-                            '64GB' => '64 GB',
-                            '128GB' => '128 GB',
-                            '256GB' => '256 GB',
-                            '512GB' => '512 GB',
+                            '32 GB' => '32 GB',
+                            '64 GB' => '64 GB',
+                            '128 GB' => '128 GB',
+                            '256 GB' => '256 GB',
+                            '512 GB' => '512 GB',
                         ])
                         ->required(),
                     ]),
